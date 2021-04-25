@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button, ButtonRound, ButtonOutlined} from './styled-components/Button'
 
-function App() {
+const  App = ()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+      <Button small > Button </Button>
+      <Button medium > Button </Button>
+      <Button large > Button </Button>
+      </div>
+
+      <div>
+      <ButtonRound small > ButtonRound </ButtonRound>
+      <ButtonRound medium > ButtonRound </ButtonRound>
+      <ButtonRound large > ButtonRound </ButtonRound>
+      </div>
+
+      <div>
+      <ButtonOutlined small> ButtonOutlined </ButtonOutlined>
+      <ButtonOutlined medium> ButtonOutlined </ButtonOutlined>
+      <ButtonOutlined large> ButtonOutlined </ButtonOutlined>
+      </div>
+
     </div>
   );
 }
