@@ -1,40 +1,69 @@
 import './App.css';
 import {Button, ButtonRound, ButtonOutlined, ExtendedButton, AnotherButton} from './styled-components/Button'
+import { Input } from './styled-components/input'
+import { Card } from './styled-components/cards'
 
 const  App = ()=> {
   return (
     <div>
+
       <div>
-      <Button small > Button </Button>
-      <Button medium > Button </Button>
-      <Button large > Button </Button>
+        <div>
+        <Button large > Large </Button>
+        <Button medium > Medium </Button>
+        <Button small > Small </Button>
+        </div>
+
+        <div>
+        <ButtonRound large > Large </ButtonRound>
+        <ButtonRound medium > Medium </ButtonRound>
+        <ButtonRound small > Small </ButtonRound>
+        </div>
+
+        <div>
+        <ButtonOutlined large> Large </ButtonOutlined>
+        <ButtonOutlined medium> Medium </ButtonOutlined>
+        <ButtonOutlined small> Small </ButtonOutlined>
+        </div>
+
+        <div>
+          <ExtendedButton large > Large </ExtendedButton>
+          <ExtendedButton medium > Medium </ExtendedButton>
+          <ExtendedButton small > Small </ExtendedButton>
+        </div>
+
+        <div>
+          <AnotherButton large > Large </AnotherButton>
+          <AnotherButton medium > Medium </AnotherButton>
+          <AnotherButton small > Small </AnotherButton>
+        </div>
       </div>
 
       <div>
-      <ButtonRound small > ButtonRound </ButtonRound>
-      <ButtonRound medium > ButtonRound </ButtonRound>
-      <ButtonRound large > ButtonRound </ButtonRound>
+        <Input placeholder="regular" />
+        <Input placeholder="primary" primary />
+        <Input placeholder="secondary" secondary />
       </div>
 
-      <div>
-      <ButtonOutlined small> ButtonOutlined </ButtonOutlined>
-      <ButtonOutlined medium> ButtonOutlined </ButtonOutlined>
-      <ButtonOutlined large> ButtonOutlined </ButtonOutlined>
+      <div style={{maxWidth: "350px"}}>
+        <Card>
+          Boom!
+          <br/>
+          Hola!
+          <br/>
+          Hey!
+        </Card>
+
+        <Card>
+          Boom!
+          <br/>
+          Hola!
+          <br/>
+          Hey!
+        </Card>
       </div>
 
-      <div>
-        <ExtendedButton small >ExtendedButton</ExtendedButton>
-        <ExtendedButton medium >ExtendedButton</ExtendedButton>
-        <ExtendedButton large >ExtendedButton</ExtendedButton>
-      </div>
-
-      <div>
-        <AnotherButton small >AnotherButton</AnotherButton>
-        <AnotherButton medium >AnotherButton</AnotherButton>
-        <AnotherButton large >AnotherButton</AnotherButton>
-      </div>
     </div>
   );
 }
-
 export default App;

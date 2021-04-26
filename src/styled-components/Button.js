@@ -2,47 +2,47 @@ import styled from 'styled-components'
 
 const Button = styled.button`
     background-color: #8ac1ff ;
-    border: 1px solid #aa9f9f;
-    font-family: 'ubuntu';
+    border: 2.5px solid #ffffff;
+    font-family: 'Varela Round', sans-serif;
     color: #1a1a1a;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "25px"};
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin: 3px;
+    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "18px" || "12px"};
     cursor: pointer;
     transition: 0.2s ease-in-out;
     :hover{
         background-color: #56a5ff;
-        transition: 0.2s ease-in-out
+        transition: 0.2s ease-in-out;
     };
 `;
 
 const ButtonRound = styled.button`
-    background-color: #ff8c2d ;
-    border: 1px solid #bdb3b3;
-    font-family: 'ubuntu';
-    color: #1a1a1a;
+    background-color: #ffdf2d ;
+    border: 2.5px solid #ffffff;
+    font-family: 'Varela Round', sans-serif;
+    color: #424242;
     border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "25px"};
+    padding: 4px 8px;
+    margin: 3px;
+    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "18px" || "12px"};
     cursor: pointer;
     transition: 0.2s ease-in-out;
     :hover{
-        background-color: #fa8220;
+        background-color: #e9cc29;
         transition: 0.2s ease-in-out
     };
 `;
 
 const ButtonOutlined = styled.button`
-    border: 1px solid #9b9b9b;
+    border: 2.5px solid #ffffff;
     background: none;
-    font-family: 'ubuntu';
+    font-family: 'Varela Round', sans-serif;
     color: #1a1a1a;
     border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "25px"};
+    padding: 4px 8px;
+    margin: 3px;
+    font-size: ${ props => props.small && "10px" || props.medium && "15px" || props.large &&  "18px" || "12px"};
     cursor: pointer;
     transition: 0.2s ease-in-out;
     :hover{
@@ -52,7 +52,7 @@ const ButtonOutlined = styled.button`
 `;
 
 const ExtendedButton = styled(Button)`
-    color: #ec4300;
+    color: #1d1d1d;
 `;
 
 const AnotherButton = props => <ButtonRound {...props} children={props.children+"**"} />
