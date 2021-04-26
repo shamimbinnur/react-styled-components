@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 const Button = styled.button`
     background-color: #8ac1ff ;
-    border: 1px solid #9b9b9b;
+    border: 1px solid #aa9f9f;
+    font-family: 'ubuntu';
     color: #1a1a1a;
     border-radius: 5px;
     padding: 10px;
@@ -18,7 +19,8 @@ const Button = styled.button`
 
 const ButtonRound = styled.button`
     background-color: #ff8c2d ;
-    border: 1px solid #b6b6b6;
+    border: 1px solid #bdb3b3;
+    font-family: 'ubuntu';
     color: #1a1a1a;
     border-radius: 20px;
     padding: 10px;
@@ -35,6 +37,7 @@ const ButtonRound = styled.button`
 const ButtonOutlined = styled.button`
     border: 1px solid #9b9b9b;
     background: none;
+    font-family: 'ubuntu';
     color: #1a1a1a;
     border-radius: 20px;
     padding: 10px;
@@ -47,4 +50,12 @@ const ButtonOutlined = styled.button`
         transition: 0.2s ease-in-out
     };
 `;
-export { Button, ButtonRound, ButtonOutlined };
+
+const ExtendedButton = styled(Button)`
+    color: #ec4300;
+`;
+
+const AnotherButton = props => <ButtonRound {...props} children={props.children+"**"} />
+
+
+export { Button, ButtonRound, ButtonOutlined, ExtendedButton, AnotherButton };

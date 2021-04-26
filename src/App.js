@@ -1,5 +1,5 @@
 import './App.css';
-import {Button, ButtonRound, ButtonOutlined} from './styled-components/Button'
+import {Button, ButtonRound, ButtonOutlined, ExtendedButton, AnotherButton} from './styled-components/Button'
 
 const  App = ()=> {
   return (
@@ -22,6 +22,17 @@ const  App = ()=> {
       <ButtonOutlined large> ButtonOutlined </ButtonOutlined>
       </div>
 
+      <div>
+        <ExtendedButton small >ExtendedButton</ExtendedButton>
+        <ExtendedButton medium >ExtendedButton</ExtendedButton>
+        <ExtendedButton large >ExtendedButton</ExtendedButton>
+      </div>
+
+      <div>
+        <AnotherButton small >AnotherButton</AnotherButton>
+        <AnotherButton medium >AnotherButton</AnotherButton>
+        <AnotherButton large >AnotherButton</AnotherButton>
+      </div>
     </div>
   );
 }
